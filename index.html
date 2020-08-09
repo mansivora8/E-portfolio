@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Mansi Vora</title>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -16,6 +17,24 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+    	#navi li a.current {
+    	color: #3e64ff;
+    	margin-left: 20px;
+    	position: relative;
+	}
+	 #navi li a.current:after {
+          position: absolute;
+          top: 50%;
+          left: -24px;
+          width: 20px;
+          height: 2px;
+          content: '';
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          background: #3e64ff; }
+    </style>
     </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
@@ -32,7 +51,7 @@
 	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
 	          <li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
 	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li>
+	          <li class="nav-item"><a href="#blog-section" class="nav-link"><span>Testimonials</span></a></li>
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 	        </ul>
 	      </div>
@@ -50,7 +69,7 @@
 			  				<span
 						     class="txt-rotate"
 						     data-period="2000"
-						     data-rotate='[ "Web Designer.", "Web Developer.", "Photographer.", "Marketer.", "Blogger" ]'></span>
+						     data-rotate='[ "Web Designer.", "Web Developer.", "Marketer.", "Blogger" ]'></span>
 			  			</h2>
 			  		</div>
 			 	</div>
@@ -99,7 +118,7 @@
 		            	<li class="d-flex"><span>Phone: </span> <span>+91 6356263345</span></li>
 		            </ul>
               <div class="text">
-                <p style="margin-top: 15px;"><a href="#" class="btn btn-primary py-3 px-3">Download CV</a></p>
+                <p style="margin-top: 15px;"><button class="btn btn-primary py-3 px-3" onclick="myfunction()">Download CV</button></p>
               </div>
 	        </div>
         </div>
@@ -114,7 +133,7 @@
 					      <li><a href="#page-1">Education</a></li>
 					      <li><a href="#page-2">Experience</a></li>
 					      <li><a href="#page-3">Skills</a></li>
-					      <li><a href="#page-4">Awards</a></li>
+					      <li><a href="#page-4">Certificates</a></li>
 					    </ul>
 					  </nav>
 					</div>
@@ -157,39 +176,6 @@
 					  </div>
 					  <div id="page-2" class= "page two">
 					  	<h2 class="heading">Experience</h2>
-					  	<div class="resume-wrap d-flex ftco-animate">
-	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">2020</span>
-		    					<h2>Web Developer</h2>
-		    					<span class="position">Company</span>
-		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-		    				</div>
-		    			</div>
-	    				<div class="resume-wrap d-flex ftco-animate">
-	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">2014-2015</span>
-		    					<h2>Web Designer</h2>
-		    					<span class="position">Cambridge University</span>
-		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-		    				</div>
-	    				</div>
-	    				<div class="resume-wrap d-flex ftco-animate">
-	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">2014-2015</span>
-		    					<h2>Web Marketing</h2>
-		    					<span class="position">Cambridge University</span>
-		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-		    				</div>
-	    				</div>
 					  </div>
 					  <div id="page-3" class= "page three">
 					  	<h2 class="heading">Skills</h2>
@@ -325,16 +311,16 @@
 					  	</div>
 					  </div>
 					  <div id="page-4" class= "page four">
-					    <h2 class="heading">Awards</h2>
+					    <h2 class="heading">Certificates</h2>
 					    	<div class="resume-wrap d-flex ftco-animate">
 	    					<div class="icon d-flex align-items-center justify-content-center">
 					    		<span class="flaticon-ideas"></span>
 					    	</div>
 					    	<div class="text pl-3">
-		    					<span class="date">2014-2015</span>
-		    					<h2>Top 10 Web Developer</h2>
-		    					<span class="position">Cambridge University</span>
-		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+		    					<span class="date">2018</span>
+		    					<h2>Java Course</h2>
+		    					<span class="position">Sololearn</span>
+		    					<p>Check out the certificate <a href="#">here</a>.</p>
 		    				</div>
 		    			</div>
 	    				<div class="resume-wrap d-flex ftco-animate">
@@ -342,10 +328,10 @@
 					    		<span class="flaticon-ideas"></span>
 					    	</div>
 					    	<div class="text pl-3">
-		    					<span class="date">2014-2015</span>
-		    					<h2>Top 5 LeaderShip Exellence Winner</h2>
-		    					<span class="position">Cambridge University</span>
-		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+		    					<span class="date">2020</span>
+		    					<h2>Web Development-LOR</h2>
+		    					<span class="position">Mycaptain-The Climber</span>
+		    					<p>Check out the certificate <a href="#">here</a>.</p>
 		    				</div>
 	    				</div>
 	    				<div class="resume-wrap d-flex ftco-animate">
@@ -353,21 +339,10 @@
 					    		<span class="flaticon-ideas"></span>
 					    	</div>
 					    	<div class="text pl-3">
-		    					<span class="date">2014-2015</span>
-		    					<h2>Top 4 Web Tester</h2>
-		    					<span class="position">Cambridge University</span>
-		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-		    				</div>
-	    				</div>
-	    				<div class="resume-wrap d-flex ftco-animate">
-	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">2014-2015</span>
-		    					<h2>Art &amp; Creative Director</h2>
-		    					<span class="position">Cambridge University</span>
-		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+		    					<span class="date">2020</span>
+		    					<h2>App Development-LOR</h2>
+		    					<span class="position">Mycaptain-The Climber</span>
+		    					<p>Check out the certificate <a href="#">here</a>.</p>		    				
 		    				</div>
 	    				</div>
 					  </div>
@@ -399,10 +374,10 @@
 					<div class="col-md-4 text-center d-flex ftco-animate">
 						<a href="#" class="services-1 shadow">
 							<span class="icon">
-								<i class="flaticon-flasks"></i>
+								<i class="flaticon-innovation"></i>
 							</span>
 							<div class="desc">
-								<h3 class="mb-5">Phtography</h3>
+								<h3 class="mb-5">Photography</h3>
 								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
 							</div>
 						</a>
@@ -430,28 +405,6 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1 shadow">
-							<span class="icon">
-								<i class="flaticon-ux-design"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-5">Branding</h3>
-								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1 shadow">
-							<span class="icon">
-								<i class="flaticon-idea"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-5">Product Strategy</h3>
-								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-							</div>
-						</a>
-					</div>
 				</div>
     	</div>
     </section>
@@ -469,7 +422,7 @@
     				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/p1.png);">
     					<div class="overlay"></div>
 	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
+	    					<h3><a href="#">Eplanner-Event Management System</a></h3>
 	    					<span>Web Design</span>
 	    				</div>
     				</div>
@@ -478,44 +431,26 @@
     				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/p2.PNG);">
     					<div class="overlay"></div>
 	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
+	    					<h3><a href="#">Giggles-Online Toy Shop</a></h3>
 	    					<span>Web Design</span>
 	    				</div>
     				</div>
   				</div>
 
     			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-3.jpg);">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/p3.png);">
     					<div class="overlay"></div>
 	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
+	    					<h3><a href="#">HMS-Hostel Management system</a></h3>
 	    					<span>Web Design</span>
 	    				</div>
     				</div>
     			</div>
     			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-4.jpg);">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/p4.png);">
     					<div class="overlay"></div>
 	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div>
-    			</div>
-    			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-5.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div>
-    			</div>
-    			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-6.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
+	    					<h3><a href="#">Share-Photo sharing website</a></h3>
 	    					<span>Web Design</span>
 	    				</div>
     				</div>
@@ -527,23 +462,22 @@
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Blog</h1>
-            <h2 class="mb-4">Our Blog</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            <h1 class="big big-2">Testimonials</h1>
+            <h2 class="mb-4">Testimonials</h2>
+            <p>Here's what people think about me</p>
           </div>
         </div>
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
+              <a href="single.html" class="block-20" style="background-image: url('images/t1.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
-                <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
+                <h3 class="heading"><a href="single.html">Good Portfolio</a></h3>
                 <div class="d-flex align-items-center mb-3 meta">
 	                <p class="mb-0">
 	                	<span class="mr-2">Sept. 12, 2019</span>
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+	                	<a href="#" class="mr-2">User1</a>
 	                </p>
                 </div>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
@@ -552,15 +486,14 @@
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
+              <a href="single.html" class="block-20" style="background-image: url('images/t2.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
-                <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
+                <h3 class="heading"><a href="single.html">Good Portfolio</a></h3>
                 <div class="d-flex align-items-center mb-3 meta">
 	                <p class="mb-0">
 	                	<span class="mr-2">Sept. 12, 2019</span>
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+	                	<a href="#" class="mr-2">User2</a>
 	                </p>
                 </div>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
@@ -569,15 +502,14 @@
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry">
-              <a href="single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
+              <a href="single.html" class="block-20" style="background-image: url('images/t3.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
-                <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
+                <h3 class="heading"><a href="single.html">Good Portfolio</a></h3>
                 <div class="d-flex align-items-center mb-3 meta">
 	                <p class="mb-0">
 	                	<span class="mr-2">Sept. 12, 2019</span>
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+	                	<a href="#" class="mr-2">User3</a>
 	                </p>
                 </div>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
@@ -617,7 +549,7 @@
           		</div>
           		<div>
 	          		<h3 class="mb-4">Address</h3>
-		            <p></p>
+		            <p>Jamnagar Gujarat India</p>
 		          </div>
 	          </div>
           </div>
@@ -628,7 +560,7 @@
           		</div>
           		<div>
 	          		<h3 class="mb-4">Contact Number</h3>
-		            <p><a href="tel://1234567920">+ 1235 2355 98</a></p>
+		            <p><a href="tel://1234567920">+91 6356263345</a></p>
 	            </div>
 	          </div>
           </div>
@@ -639,7 +571,7 @@
           		</div>
           		<div>
 	          		<h3 class="mb-4">Email Address</h3>
-		            <p><a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+		            <p><a href="mailto:mansivora2001@gmail.com">mansivora2001@gmail.com</a></p>
 		          </div>
 	          </div>
           </div>
@@ -650,7 +582,7 @@
           		</div>
           		<div>
 	          		<h3 class="mb-4">Website</h3>
-		            <p><a href="#">yoursite.com</a></p>
+		            <p><a href="https://mansivora8.github.io/E-portfolio/">mansivora8.github.io/E-portfolio</a></p>
 	            </div>
 	          </div>
           </div>
@@ -658,21 +590,22 @@
 
         <div class="row no-gutters block-9">
           <div class="col-md-6 order-md-last d-flex">
-            <form action="#" class="bg-light p-4 p-md-5 contact-form">
+            <form action="#"  onsubmit="myfunc()" class="bg-light p-4 p-md-5 contact-form">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
+                <input type="text" class="form-control" placeholder="Your Name" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
+                <input type="text" class="form-control" placeholder="Your Email" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
+                <input type="text" class="form-control" placeholder="Subject" required>
               </div>
               <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                <textarea name="" id="" cols="30" rows="7" class="form-control" required placeholder="Message"></textarea>
               </div>
               <div class="form-group">
                 <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                <p id="msg"></p>
               </div>
             </form>
           
@@ -747,7 +680,8 @@
       </div>
     </footer>
 
-    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+      <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
   <script src="js/jquery.min.js"></script>
@@ -762,7 +696,32 @@
   <script src="js/aos.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-  
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">
+  	function myfunction()
+  	{
+  		swal({
+		  title: "Good job!",
+		  text: "You clicked the button!",
+		  icon: "success",
+		  button: "Aww yiss!",
+		});
+  	}
+  </script>
   <script src="js/main.js"></script>
+  <script>
+  		function myfunc()
+  		{
+		 var userPreference;
+  		
+
+		if (confirm("Do you want to send message?") == true) {
+			userPreference = "Data saved successfully!";
+		} else {
+			userPreference = "Save Canceled!";
+		}
+
+		document.getElementById("msg").innerHTML = userPreference; 
+	}
+    </script>
 </body>
 </html>
